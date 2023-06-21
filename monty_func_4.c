@@ -50,7 +50,7 @@ void _sub(stack_t **stack, unsigned int line_number)
 	while (tmp)
 	{
 		tmp = tmp->next;
-		i++
+		i++;
 	}
 	if (stack == NULL || (*stack)->next == NULL || i <= 1)
 	{
