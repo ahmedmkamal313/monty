@@ -36,16 +36,16 @@
    } instruction_t;
    ```
 
-### Compilation:
-    - code was compiled by :
+ **Compilation:**
+   - code was compiled by :
       `# gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty`
 
-### List of Files
-    - **monty.c**: the main function
-    - **monty.h**: Header file
-    - **monty_func_0.c**
-    - **monty_func_1.c**
-    - **monty_func_2.c**
-    - **monty_func_3.c**
-    - **monty_func_4.c**
-    - **monty_func_5.c**
+ **List of Files:**
+   - **monty.c**: the main function
+   - **monty.h**: Header file
+   - **monty_func_0.c**
+   - **monty_func_1.c**
+   - **monty_func_2.c**
+   - **monty_func_3.c**
+   - **monty_func_4.c**
+   - **monty_func_5.c**
