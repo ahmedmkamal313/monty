@@ -17,11 +17,28 @@ void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
 	}
 
 	top->n = var_global.push_arg;
-	top->next = *stack;
-	top->prev = NULL;
-	if (*stack != NULL)
-		(*stack)->prev = top;
-	*stack = top;
+	if (var_global.mode == 0)
+	{
+		top->next = *stack;
+		top->prev = NULL;
+		if (*stack != NULL)
+			(*stack)->prev = top;
+		*stack = top;
+	}
+	else if (var_global.mode == 1)
+	{
+		top->next = NULL;
+		if (*stack == NULL)
+		{
+			top->prev = NULL;
+			*stack = top;
+		}
+		else
+		{
+			top->prev = get_tail(*stack);
+			top->prev->next = top;
+		}
+	}
 }
 
 /**
