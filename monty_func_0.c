@@ -126,6 +126,8 @@ instruct_func get_op_func(char *str)
 		{"pstr", _pstr},
 		{"rotl", _rotl},
 		{"rotr", _rotr},
+		{"stack", _stack},
+		{"queue", _queue},
 		{NULL, NULL},
 	};
 
