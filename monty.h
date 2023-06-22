@@ -51,6 +51,7 @@ typedef struct global_variable
 	FILE *file;
 	int push_arg;
 	char *buffer;
+	int mode;
 } global_var;
 
 extern global_var var_global;
@@ -85,4 +86,6 @@ int _isalpha(int c);
 
 void _stack(stack_t **stack, unsigned int line_number);
 void _queue(stack_t **stack, unsigned int line_number);
+
+stack_t *get_tail(stack_t *stack);
 #endif
