@@ -82,4 +82,7 @@ void free_dlistint(stack_t *head);
 void dobfree(stack_t **stack);
 void dobfree2(stack_t **stack);
 int _isalpha(int c);
+
+void _stack(stack_t **stack, unsigned int line_number);
+void _queue(stack_t **stack, unsigned int line_number);
 #endif
